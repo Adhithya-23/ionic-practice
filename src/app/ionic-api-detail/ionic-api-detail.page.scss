@@ -1,0 +1,30 @@
+.functional {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.function-img {
+  height: 30rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.camera-placeholder {
+  margin-top: 50%;
+  display: flex;
+  margin: 3rem;
+  border: dotted;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17%;
+  border: dotted 3px darkgray;
+}
+
+.camera-icon {
+  position: absolute;
+  display: block;
+  top: 12%;
+  left: 77%;
+  opacity: 0.5;
+  cursor: pointer;
+}

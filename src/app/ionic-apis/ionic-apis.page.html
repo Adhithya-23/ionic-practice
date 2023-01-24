@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ionic Apis</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-list>
+  <ion-item>
+    <div>Logged In Time: {{authService.loggedIntime}} </div>
+  </ion-item>
+  <ion-item>
+    <div>Expiry Time: {{authService.expiryTime}}</div>
+  </ion-item>
+  <ion-item>
+    <div>Time to Expiry: {{authService.timer}}</div>
+  </ion-item>
+  <ion-item>
+    <div>ThresholdTime: {{authService.thresholdTime}}</div>
+  </ion-item>
+  <ion-item>
+    <div>Current Time: {{authService.currentTime}}</div>
+  </ion-item>
+</ion-list>
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let recepie of recepies" [routerLink]="['./', recepie.id]">
+    <ion-card></ion-card>
+    <ion-avatar slot="start">
+      <ion-img [src]="recepie.imageUrl"></ion-img>
+    </ion-avatar>
+    <ion-label>{{recepie.title}}</ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>
