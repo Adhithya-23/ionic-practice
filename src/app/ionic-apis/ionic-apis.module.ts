@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RecepiesPageRoutingModule } from './ionic-apis-routing.module';
+import { IonicApiPageRoutingModule } from './ionic-apis-routing.module';
 
-import { RecepiesPage } from './ionic-apis.page';
+import { IonicApiPage } from './ionic-apis.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RecepiesPageRoutingModule
+    IonicApiPageRoutingModule
   ],
-  declarations: [RecepiesPage]
+  declarations: [IonicApiPage]
 })
-export class RecepiesPageModule {}
+export class IonicApiPageModule {}

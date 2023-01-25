@@ -2,7 +2,7 @@
   <ion-toolbar color="primary">
     <ion-title>Ionic API-detail</ion-title>
     <ion-buttons slot="primary">
-      <ion-back-button defaultHref="/recepies"></ion-back-button>
+      <ion-back-button defaultHref="/ionicApis"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -11,9 +11,9 @@
 <ion-grid>
   <ion-row>
     <ion-col col-md="6">
-      <ion-img class="function-img" [src]="recepie.imageUrl" (click)="addPhotoToGallery()"></ion-img>
+      <ion-img class="function-img" [src]="ionicApi.imageUrl" (click)="addPhotoToGallery()"></ion-img>
     </ion-col>
-    <ion-col *ngIf="recepie.title ==='Camera'; else geoLocation" class="functional">
+    <ion-col *ngIf="ionicApi.title ==='Camera'; else geoLocation" class="functional">
       <ion-list *ngIf="photoService.photos.length > 0">
         <ion-item *ngFor="let photo of photoService.photos">
           <ion-row>
@@ -34,7 +34,7 @@
   </ion-row>
   <ion-row>
     <ion-col>
-      <h1>{{recepie.title}}</h1>
+      <h1>{{ionicApi.title}}</h1>
     </ion-col>
   </ion-row>
   <!-- <ion-row>
@@ -49,7 +49,7 @@
   <ion-row>
     <ion-col>
       <ion-list>
-        <ion-item *ngFor="let spec of recepie.specifications">{{spec}}</ion-item>
+        <ion-item *ngFor="let spec of ionicApi.specifications">{{spec}}</ion-item>
       </ion-list>
     </ion-col>
   </ion-row>

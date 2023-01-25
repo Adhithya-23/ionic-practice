@@ -1,20 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { RecepieDetailServiceService } from '../ionic-api-detail.service';
+import { IonicApiDetailServiceService } from '../ionic-api-detail.service';
 import { AuthService } from '../services/auth.service';
-import { Recepie } from './ionic-apis.model';
+import { IonicApi } from './ionic-apis.model';
 
 @Component({
-  selector: 'app-recepies',
+  selector: 'app-ionic-apis',
   templateUrl: './ionic-apis.page.html',
   styleUrls: ['./ionic-apis.page.scss'],
 })
-export class RecepiesPage implements OnInit {
-  recepies: Recepie[] = [];
-  constructor(private recepieService: RecepieDetailServiceService,
+export class IonicApiPage implements OnInit {
+  ionicApis: IonicApi[] = [];
+  constructor(private ionicApiservice: IonicApiDetailServiceService,
               public authService: AuthService) {}
 
   ngOnInit() {
-    this.recepies = this.recepieService.getRecepies();
+    this.ionicApis = this.ionicApiservice.getIonicApis();
     this.authService.getTimer();
   }
 }

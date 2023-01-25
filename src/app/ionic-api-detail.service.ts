@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Recepie } from './ionic-apis/ionic-apis.model';
+import { IonicApi } from './ionic-apis/ionic-apis.model';
 
 @Injectable({
   providedIn: 'root',
 })
-export class RecepieDetailServiceService {
-  recepie: Recepie[] = [
+export class IonicApiDetailServiceService {
+  ionicApi: IonicApi[] = [
     {
       id: '1',
       title: 'Camera',
@@ -23,11 +23,11 @@ export class RecepieDetailServiceService {
   ];
   constructor() {}
 
-  getRecepies() {
-    return [...this.recepie];
+  getIonicApis() {
+    return [...this.ionicApi];
   }
 
-  getRecepieByID(id: string): Recepie {
-    return this.recepie.find((item) => item.id == id) || ({} as Recepie);
+  getIonicApiByID(id: string): IonicApi {
+    return this.ionicApi.find((item) => item.id == id) || ({} as IonicApi);
   }
 }

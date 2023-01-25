@@ -22,12 +22,12 @@
 </ion-list>
 <ion-content>
 <ion-list>
-  <ion-item *ngFor="let recepie of recepies" [routerLink]="['./', recepie.id]">
+  <ion-item *ngFor="let ionicApi of ionicApis" [routerLink]="['./', ionicApi.id]">
     <ion-card></ion-card>
     <ion-avatar slot="start">
-      <ion-img [src]="recepie.imageUrl"></ion-img>
+      <ion-img [src]="ionicApi.imageUrl"></ion-img>
     </ion-avatar>
-    <ion-label>{{recepie.title}}</ion-label>
+    <ion-label>{{ionicApi.title}}</ion-label>
   </ion-item>
 </ion-list>
 </ion-content>

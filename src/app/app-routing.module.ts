@@ -14,14 +14,14 @@ const routes: Routes = [
         path: '',
         loadChildren: () =>
           import('./ionic-apis/ionic-apis.module').then(
-            (m) => m.RecepiesPageModule
+            (m) => m.IonicApiPageModule
           ),
       },
       {
         path: ':apiId',
         loadChildren: () =>
           import('./ionic-api-detail/ionic-api-detail.module').then(
-            (m) => m.RecepieDetailPageModule
+            (m) => m.IonicDetailPageModule
           ),
       },
     ],

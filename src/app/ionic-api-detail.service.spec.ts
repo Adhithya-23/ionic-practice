@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { RecepieDetailServiceService } from './ionic-api-detail.service';
+import { IonicApiDetailServiceService } from './ionic-api-detail.service';
 
-describe('RecepieDetailServiceService', () => {
-  let service: RecepieDetailServiceService;
+describe('IonicApiDetailServiceService', () => {
+  let service: IonicApiDetailServiceService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(RecepieDetailServiceService);
+    service = TestBed.inject(IonicApiDetailServiceService);
   });
 
   it('should be created', () => {

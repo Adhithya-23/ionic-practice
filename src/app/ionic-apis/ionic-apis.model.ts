@@ -1,4 +1,4 @@
-export interface Recepie {
+export interface IonicApi {
   id: string;
   imageUrl: string;
   title: string;

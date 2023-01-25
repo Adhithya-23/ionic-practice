@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RecepieDetailPageRoutingModule } from './ionic-api-detail-routing.module';
+import { IonicApiDetailPageRoutingModule } from './ionic-api-detail-routing.module';
 
-import { RecepieDetailPage } from './ionic-api-detail.page';
+import { IonicApiDetailPage } from './ionic-api-detail.page';
 import { GeoLocationPageModule } from '../geo-location/geo-location.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { GeoLocationPageModule } from '../geo-location/geo-location.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    RecepieDetailPageRoutingModule,
+    IonicApiDetailPageRoutingModule,
     GeoLocationPageModule
   ],
-  declarations: [RecepieDetailPage]
+  declarations: [IonicApiDetailPage]
 })
-export class RecepieDetailPageModule {}
+export class IonicDetailPageModule {}
